@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OmegleWeb: Chat with Strangers!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Join OmegleWeb to chat with strangers online, find new friends, and share interests in a safe, moderated environment. Engage in meaningful conversations today!">
+    <meta name="keywords" content="OmegleWeb, Omegle, Chat with Strangers, Online Chat, Meet New Friends, Safe Chatting, Online Conversation, Social Platform">
+    <link rel="icon" href="/assets/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="/assets/css/style1.css" rel="stylesheet" />
+    <link href="/assets/css/landing.css" rel="stylesheet" />
+    <link href="/assets/css/landing-phone.css" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEE73QG0DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-JEE73QG0DL');
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <!-- Top bar with logo and feedback button -->
+        <div id="top-bar">
+            <div id="logo">
+                <img src="/assets/img/4.png" alt="OmegleWeb Logo" />
+            </div>
+            <div id="top-right">
+                <div id="peopleOnline">
+                    <p><span>0</span>+ online</p>
+                </div>
+                <button id="feedback-btn" class="button">Feedback</button>
+            </div>
+        </div>
+
+        <!-- Main content area -->
+        <div id="content">
+            <h1>Omegle Alternative</h1>
+            <div id="options-container">
+                <!-- Interests -->
+                <div id="interest-container">
+                    <p>What do you want to talk about?</p>
+                    <input type="text" id="interests" placeholder="Add your interests (optional)" />
+                </div>
+                <!-- Chat options -->
+                <div id="chat-options">
+                    <p>Start chatting:</p>
+                    <div id="button-container">
+                        <button class="button" id="text-btn">Text</button>
+                        <button class="button" id="video-btn">Video</button>
+                        <button class="button" id="chatroom-btn">Chatroom</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Instructions -->
+            <div id="instructions">
+                <p>Video is being monitored. Keep it clean.</p>
+            </div>
+            <!-- Social message and donation section -->
+            <div id="social-message">
+                <div id="message-content">
+                    <h2>OmegleWeb - The Best Omegle Alternative</h2>
+                    <p>Welcome to a world of exciting possibilities with OmegleWeb, a vibrant platform designed to connect you with people from all corners of the globe. Whether you're seeking stimulating conversations, new friendships, or an avenue to share
+                        your unique interests and stories, OmegleWeb is your go-to destination. Our community thrives on diversity, offering a rich tapestry of cultural exchanges and enlightening dialogues.</p>
+                    <p>At OmegleWeb, we prioritize your safety and comfort. We've created a moderated environment that respects your privacy while allowing you to freely express yourself. Engage in fascinating chat sessions where you can discuss anything
+                        from your favorite hobbies to the latest global trends. Our intelligent matching system connects you with like-minded individuals, ensuring that every conversation is not only enjoyable but also meaningful.</p>
+                    <br>
+                    <p>Whether you're an artist seeking inspiration, a student looking to learn about different cultures, or simply someone who loves meeting new people, OmegleWeb's random chat sessions are designed to cater to your interests and preferences.
+                        Our platform is a melting pot of ideas and experiences, where every chat holds the promise of a new adventure. Dive into the world of OmegleWeb, where each connection is a doorway to new horizons.</p>
+                    <h3>Age Restriction Notice</h3>
+                    <p><strong>Important:</strong> OmegleWeb is strictly for adults (18 years and older). We are committed to providing a mature and responsible platform for our users. If you are under 18, please do not use our service. This age restriction
+                        is in place to ensure the safety and well-being of our community. Thank you for your understanding and cooperation.</p>
+                    <h2>Support OmegleWeb</h2>
+                    <p>Your contributions help us keep the platform running and improve the chat experience. Consider supporting OmegleWeb with a donation:</p>
+                    <ul>
+                        <li>Bitcoin (BTC): 33hyjsBgn4A3VgkUnwRWjLfPkmTzrLA2xG</li>
+                        <li>Ethereum (ETH): 0xd5cBcb489acAcbD86D6C7a8cf117A4c772401A03</li>
+                        <li>Litecoin (LTC): MHT1vbyLRjNbsiGihqo8g8RsTYfFsqSCRC</li>
+                        <li>Bitcoin Cash (BCH): qrmrndtkexrwescwwq627j0hkcmph6ettgq9rymjqv</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="footer">
+                <p>&#169; 2023 OmegleWeb.com - All rights reserved.</p>
+                <a href="/cdn-cgi/l/email-protection#30535f5e44515344705f5d55575c554755521e535f5d">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback modal -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Provide Feedback</h2>
+            <form id="feedbackForm">
+                <textarea id="feedbackText" rows="5" placeholder="Your feedback..." required></textarea>
+                <button type="submit" class="button" id="submit-btn">Send Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/js/main.min.js" defer></script>
+    <script src="/assets/js/landing.min.js" defer type="module"></script>
+    <script>
+        document.getElementById('video-btn').addEventListener('click', function() {
+            window.location.href = 'index1.html';
+        });
+
+        // Add event listener to feedback button
+        document.getElementById('feedback-btn').addEventListener('click', function() {
+            document.getElementById('feedbackModal').style.display = 'block';
+        });
+
+        // Add event listener to close the modal
+        document.querySelector('#feedbackModal .close').addEventListener('click', function() {
+            document.getElementById('feedbackModal').style.display = 'none';
+        });
+
+        // Handle feedback form submission
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your feedback submission logic here
+            alert('Feedback sent!');
+            document.getElementById('feedbackModal').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
